@@ -13,10 +13,10 @@ Para executar o projeto, basta clonar e abrir o projeto dentro de uma IDE
 
 ### Funcionalidades
 
-[x]Banco de Dados
-[]Paginação
-[]Front
-[]Back
+- [x] Banco de Dados
+- [ ] Paginação
+- [ ] Front
+- [ ] Back
 
 ### Importante!
 
