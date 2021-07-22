@@ -3,7 +3,7 @@ CREATE TABLE `tb_postagem` (
 	`nome_evento` varchar(255) NOT NULL,
 	`tipo_evento` varchar(255) NOT NULL,
 	`site` varchar(255) NOT NULL,
-	`descrição_evento` varchar(255) NOT NULL,
+	`descricao_evento` varchar(255) NOT NULL,
 	`tema_id` bigint NOT NULL,
 	`usuario_id` bigint NOT NULL,
 	PRIMARY KEY (`Id`)
@@ -13,8 +13,8 @@ CREATE TABLE `tb_tema` (
 	`Id` bigint NOT NULL,
 	`tema_evento` varchar(255) NOT NULL,
 	`local_evento` varchar(255) NOT NULL,
-	`data_horario` varchar(255) NOT NULL,
-	`quant_pessoas` varchar(255) NOT NULL,
+	`data_horario` DATETIME(255) NOT NULL,
+	`quant_pessoas` bigint(255) NOT NULL,
 	PRIMARY KEY (`Id`)
 );
 
@@ -24,6 +24,10 @@ CREATE TABLE `tb_usuário` (
 	`e-mail` varchar(255) NOT NULL,
 	`senha` varchar(255) NOT NULL,
 	`Ongs` BOOLEAN(255) NOT NULL,
+	`Genero` char(255) NOT NULL,
+	`CPF` varchar(255) NOT NULL,
+	`CNPJ` varchar(255) NOT NULL,
+	`data_nascimento` DATE(255) NOT NULL,
 	PRIMARY KEY (`Id`)
 );
 
