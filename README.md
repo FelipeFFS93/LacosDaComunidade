@@ -2,10 +2,10 @@
 
 ### Tecnologias usadas no projeto
 
-MySQL
-CSS3
-HTML5
-BOOTSTRAP
+- MySQL
+- CSS3
+- HTML5
+- BOOTSTRAP
 
 ### Instalação do projeto
 
