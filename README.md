@@ -1,11 +1,21 @@
 # Laços da Comunidade
 
-### Tecnologias usadas no projeto
 
-- MySQL
-- CSS3
-- HTML5
-- BOOTSTRAP
+<details>
+  <sumary>Tecnologias usadas no projeto </sumary>
+  
+  **Na parte Back-end utilizamos:**
+![Github sql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+<img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
+<img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>
+  
+**Na parte Front-end utilizamos:**
+![Github css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Github Html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Github JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  
+</details>
+
 
 ### Instalação do projeto
 
