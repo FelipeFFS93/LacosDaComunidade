@@ -22,19 +22,21 @@ public class Tema {
 	
 	@NotNull
 	@Size (min = 5, max = 255)
-	private String tema_evento;
+	private String temaEvento;
 	
 	@NotNull
 	@Size (min = 5, max = 255)
-	private String local_evento;
+	private String localEvento;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-    private Date data_horario = new java.sql.Date(System.currentTimeMillis());
+    private Date dataHorario = new java.sql.Date(System.currentTimeMillis());
 	
+	//@Column(name = "quant_pessoas")
 	@NotNull
 	@Size (min = 5, max = 500)
-	private long quant_pessoas;
+	private long quantPessoas;
 
+	
 	public long getId() {
 		return id;
 	}
@@ -43,43 +45,36 @@ public class Tema {
 		this.id = id;
 	}
 
-	public String getTema_evento() {
-		return tema_evento;
+	public String getTemaEvento() {
+		return temaEvento;
 	}
 
-	public void setTema_evento(String tema_evento) {
-		this.tema_evento = tema_evento;
+	public void setTemaEvento(String temaEvento) {
+		this.temaEvento = temaEvento;
 	}
 
-	public String getLocal_evento() {
-		return local_evento;
+	public String getLocalEvento() {
+		return localEvento;
 	}
 
-	public void setLocal_evento(String local_evento) {
-		this.local_evento = local_evento;
+	public void setLocalEvento(String localEvento) {
+		this.localEvento = localEvento;
 	}
 
-	public Date getData_horario() {
-		return data_horario;
+	public Date getDataHorario() {
+		return dataHorario;
 	}
 
-	public void setData_horario(Date data_horario) {
-		this.data_horario = data_horario;
+	public void setDataHorario(Date dataHorario) {
+		this.dataHorario = dataHorario;
 	}
 
-	public long getQuant_pessoas() {
-		return quant_pessoas;
+	public long getQuantPessoas() {
+		return quantPessoas;
 	}
 
-	public void setQuant_pessoas(long quant_pessoas) {
-		this.quant_pessoas = quant_pessoas;
+	public void setQuantPessoas(long quantPessoas) {
+		this.quantPessoas = quantPessoas;
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }
