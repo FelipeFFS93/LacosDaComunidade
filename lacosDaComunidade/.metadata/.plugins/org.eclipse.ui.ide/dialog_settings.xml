@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="net.mihai-nita.ansicon:1.4.4.202102080044"/>
+		<item value="org.eclipse.buildship:3.1.5.v20210113-0929"/>
+		<item value="org.eclipse.egit.gitflow.feature:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.egit:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.emf.common:2.22.0.v20210319-0732"/>
+		<item value="org.eclipse.emf.ecore:2.24.0.v20210405-0628"/>
+		<item value="org.eclipse.epp.mpc:1.9.1.v20210204-1408"/>
+		<item value="org.eclipse.help:2.3.600.v20210611-1600"/>
+		<item value="org.eclipse.jdt:3.18.800.v20210611-1600"/>
+		<item value="org.eclipse.jgit.gpg.bc:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.jgit.http.apache:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.jgit.lfs:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.jgit:5.12.0.202106070339-r"/>
+		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.22.0.v202103232321"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:16.0.1.v20210528-1205"/>
+		<item value="org.eclipse.m2e.feature:1.18.0.20210603-1206"/>
+		<item value="org.eclipse.m2e.logback.feature:1.17.1.20210603-1006"/>
+		<item value="org.eclipse.m2e.wtp.feature:1.4.4.20201128-1705"/>
+		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.39.202102270010"/>
+		<item value="org.eclipse.pde:3.14.800.v20210611-1636"/>
+		<item value="org.eclipse.platform:4.20.0.v20210611-1600"/>
+		<item value="org.eclipse.rcp:4.20.0.v20210611-1600"/>
+		<item value="org.eclipse.tm.terminal.connector.ssh.feature:10.3.0.202104042017"/>
+		<item value="org.eclipse.tm.terminal.control.feature:10.3.0.202105240049"/>
+		<item value="org.eclipse.tm.terminal.feature:10.3.0.202104042017"/>
+		<item value="org.eclipse.tm.terminal.view.feature:10.3.0.202105240430"/>
+		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+		<item value="org.eclipse.wst.common.fproj:3.7.3.v202007142017"/>
+		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
+		<item value="org.jboss.tools.maven.apt.feature:1.5.2.201812241535"/>
+		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
+		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
+		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.5.202002191804"/>
+	</list>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="209"/>
+		<item key="DIALOG_Y_ORIGIN" value="185"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>
