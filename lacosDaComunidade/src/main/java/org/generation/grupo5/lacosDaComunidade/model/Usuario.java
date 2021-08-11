@@ -35,7 +35,7 @@ public class Usuario {
 	private String email;
 	
 	@NotBlank
-	@Size (min = 5, max = 255)
+	@Size (min = 5)
 	private String senha;
 
 	@NotBlank
