@@ -1,8 +1,6 @@
 package org.generation.grupo5.lacosDaComunidade.service;
 
-import java.time.LocalDate;
 import java.nio.charset.Charset;
-import java.time.Period;
 import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;

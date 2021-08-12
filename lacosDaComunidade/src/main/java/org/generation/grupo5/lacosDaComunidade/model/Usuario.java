@@ -32,7 +32,7 @@ public class Usuario {
 	
 	@NotBlank
 	@Size (min = 5, max = 255)
-	private String email;
+	private String usuario;
 	
 	@NotBlank
 	@Size (min = 5)
@@ -85,12 +85,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void getUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
 	public String getSenha() {

@@ -38,8 +38,8 @@ public class UsuarioController {
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Usuario>> getByNome(@PathVariable String usuario){
-		return ResponseEntity.ok(repository.findByEmailContainingIgnoreCase(usuario));
+	public ResponseEntity<List<Usuario>> getByUsuario(@PathVariable String usuario){
+		return ResponseEntity.ok(repository.findByUsuarioContainingIgnoreCase(usuario));
 	}
 	
 	
