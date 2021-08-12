@@ -17,6 +17,7 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -55,11 +56,14 @@ public class Usuario {
 	private String CNPJ;
 	
 	@DateTimeFormat(pattern = "dd/mm/yyyy")
+	@NotNull
 	private LocalDate dataNascimento;
 
 	@OneToMany (mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
-	private List<Postagem> postagens;			 
+	private List<Postagem> postagens;	
+	
+	
    
 	public List<Postagem> getPostagens() {
 		return postagens;

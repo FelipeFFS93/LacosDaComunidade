@@ -4,7 +4,7 @@ public class UsuarioLogin {
 
 	private String nome;
 	
-	private String email;
+	private String usuario;
 	
 	private String senha;
 	
@@ -19,11 +19,11 @@ public class UsuarioLogin {
 	}
 
 	public String getEmail() {
-		return email;
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String usuario) {
+		this.usuario = usuario;
 	}
 
 	public String getSenha() {
