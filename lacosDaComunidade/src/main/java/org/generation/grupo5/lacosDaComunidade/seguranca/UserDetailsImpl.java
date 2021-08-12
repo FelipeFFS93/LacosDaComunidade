@@ -1,7 +1,7 @@
 package org.generation.grupo5.lacosDaComunidade.seguranca;
 
 import java.util.Collection;
-
+import java.util.List;
 import org.generation.grupo5.lacosDaComunidade.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,17 +13,19 @@ public class UserDetailsImpl implements UserDetails{
 	
 	private String userNome;
 	private String password;
+	private List<GrantedAuthority> authorities;
 	
 	public UserDetailsImpl (Usuario user) {
-		this.userNome = user.getNome();
+		this.userNome = user.getUsuario();
 		this.password = user.getSenha();			
 		
 	}
 	public UserDetailsImpl() {}
+	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
-		return null;
+		return authorities;
 	}
 	@Override
 	public String getPassword() {
