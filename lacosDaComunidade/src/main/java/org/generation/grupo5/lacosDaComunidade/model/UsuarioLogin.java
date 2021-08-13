@@ -2,6 +2,8 @@ package org.generation.grupo5.lacosDaComunidade.model;
 
 public class UsuarioLogin {
 
+	private long id;
+
 	private String nome;
 	
 	private String usuario;
@@ -10,24 +12,33 @@ public class UsuarioLogin {
 	
 	private String token;
 
+
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return usuario;
+	public String getUsuario() {
+		return this.usuario;
 	}
 
-	public void setEmail(String usuario) {
+	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
 
 	public String getSenha() {
-		return senha;
+		return this.senha;
 	}
 
 	public void setSenha(String senha) {
@@ -35,12 +46,13 @@ public class UsuarioLogin {
 	}
 
 	public String getToken() {
-		return token;
+		return this.token;
 	}
 
 	public void setToken(String token) {
 		this.token = token;
 	}
+	
 	
 	
 }
