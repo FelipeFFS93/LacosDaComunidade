@@ -1,12 +1,9 @@
 package org.generation.grupo5.lacosDaComunidade.controller;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.generation.grupo5.lacosDaComunidade.model.Usuario;
-import org.generation.grupo5.lacosDaComunidade.model.UsuarioLogin;
-import org.generation.grupo5.lacosDaComunidade.repository.UsuarioRepository;
-import org.generation.grupo5.lacosDaComunidade.service.UsuarioService;
+import org.generation.grupo5.lacosDaComunidade.model.Postagem;
+import org.generation.grupo5.lacosDaComunidade.repository.PostagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,54 +18,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping("/postagem")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public class UsuarioController {
+public class PostagemController {
 
 	@Autowired
-	private UsuarioRepository repository;
-	
-	@Autowired
-	private UsuarioService usuarioService;
+	private PostagemRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<Usuario>> getAll (){
+	public ResponseEntity<List<Postagem>> getAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Usuario> getById (@PathVariable long id){
+	public ResponseEntity<Postagem>getById(@PathVariable long id){
 		return repository.findById(id)
 				.map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
-	
-	@GetMapping("/usuario/{usuario}")
-	public ResponseEntity<List<Usuario>> getByUsuario(@PathVariable String usuario){
-		return ResponseEntity.ok(repository.findByUsuarioContainingIgnoreCase(usuario));
+	@GetMapping("/nomeEvento/{nome_evento}")
+	public ResponseEntity<List<Postagem>> getBynomeEvento(@PathVariable String nomeEvento){
+		return ResponseEntity.ok(repository.findAllByNomeEventoContainingIgnoreCase(nomeEvento));
 	}
 	
-	
-	@PostMapping("/logar")
-	public ResponseEntity<UsuarioLogin> Autentication (@RequestBody Optional<UsuarioLogin> user){
-		
-		return usuarioService.Logar(user).map(resp -> ResponseEntity.ok(resp))
-				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
-	}
-	
-	@PostMapping("/cadastrar")
-	public ResponseEntity<Usuario> CadastrarUsuario (@RequestBody Usuario usuario){
+	@PostMapping 
+	public ResponseEntity<Postagem> post (@RequestBody Postagem postagem){
 		return ResponseEntity.status(HttpStatus.CREATED)
-				.body(usuarioService.CadastrarUsuario(usuario));
+				.body(repository.save(postagem));
 	}
-	
-	
 	@PutMapping 
-	public ResponseEntity<Usuario> put (@RequestBody Usuario usuario){
+	public ResponseEntity<Postagem> put (@RequestBody Postagem postagem){
 		return ResponseEntity.status(HttpStatus.OK)
-				.body(repository.save(usuario));
+				.body(repository.save(postagem));
 	}
-	
 	@DeleteMapping("/{id}")
 	public void delete (@PathVariable long id) {
 		repository.deleteById(id);

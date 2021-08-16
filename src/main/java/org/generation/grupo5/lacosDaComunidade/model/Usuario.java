@@ -14,6 +14,9 @@ import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
@@ -32,7 +35,7 @@ public class Usuario {
 	
 	@NotBlank
 	@Size (min = 5, max = 255)
-	@Email(message = "O atributo usuÃ¡rio deve ser um email")
+	@Email(message = "O atributo usuário deve ser um email")
 	private String usuario;
 	
 	@NotBlank
@@ -64,7 +67,7 @@ public class Usuario {
 	private List<Postagem> postagens;	
 	
 	
- 
+   
 	public List<Postagem> getPostagens() {
 		return postagens;
 	}
