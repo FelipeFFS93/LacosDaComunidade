@@ -55,16 +55,63 @@ public class Usuario {
 	@Size (min = 5, max = 95)
 	private String CNPJ;
 	
+	private String foto;
+	
+	private String tipo;
+	
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	@NotNull
 	private LocalDate dataNascimento;
 
 	@OneToMany (mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
-	private List<Postagem> postagens;	
+	private List<Postagem> postagens;
+	
+	public Usuario(long id, String nome, String usuario, String senha, String ongs, String genero, String CPF, String CNPJ ,String foto, String tipo) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.ongs = ongs;
+		this.genero = genero;
+		this.CPF = CPF;
+		this.CNPJ = CNPJ;
+		this.foto = foto;
+		this.tipo = tipo;
+	}
 	
 	
  
+	public String getFoto() {
+		return foto;
+	}
+
+
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+
+
+	public String getTipo() {
+		return tipo;
+	}
+
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
+
+
 	public List<Postagem> getPostagens() {
 		return postagens;
 	}
