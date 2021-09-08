@@ -1,4 +1,4 @@
-package org.generation.grupo5.lacosDaComunidade.model;
+ package org.generation.grupo5.lacosDaComunidade.model;
 
 public class UsuarioLogin {
 
